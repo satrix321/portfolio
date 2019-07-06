@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'HeroPanel',
+  name: 'TheHeroPanel',
 };
 </script>
 
@@ -27,11 +27,13 @@ export default {
   text-align: center;
   font-size: 3em;
   text-shadow: 2px 2px black;
+  margin: 1rem;
 }
 
 .hero-panel__description {
   text-align: center;
   font-size: 1.6em;
   text-shadow: 2px 2px black;
+  margin: 1rem;
 }
 </style>
