@@ -10,10 +10,12 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: $color1;
+  color: white;
 }
 </style>

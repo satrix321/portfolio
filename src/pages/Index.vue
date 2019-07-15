@@ -11,32 +11,56 @@
 
     <div class="content">
       
-      <project-item
-        title="Homebrew Creator"
-        url="https://satrix321.github.io/HomebrewCreator/index.html"
-        color="red">
-        <template v-slot:image>
-          <g-image style="border-radius: 50%" src="~/assets/hero-panel-nature.jpg" width="300" height="300"/>
-        </template>
-        <template v-slot:description>
-          <p>A simple web-based tool for creating homebrews using markdown.</p>
-        </template>
-      </project-item>
+      <section-title class="col-xs-12">PROJECTS</section-title>
 
-      <!-- <p class="home-links">
-        <a href="https://gridsome.org/docs" target="_blank" rel="noopener">Gridsome Docs</a>
-        <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-      </p> -->
-
-      <the-contact-section/>
+      <div class="row">
+        <project-item
+          class="col-xs-12 col-md-6 col-lg-4"
+          title="Homebrew Creator"
+          url="https://satrix321.github.io/HomebrewCreator/index.html">
+          <template v-slot:image>
+            <g-image class="project__image" src="~/assets/hero-panel-nature.jpg"/>
+          </template>
+          <template v-slot:description>
+            <p>A simple web-based tool for creating homebrews using markdown.</p>
+            <p>This project features a live editor environment, that allows you to instantly preview your changes, and ultimately generate a beautiful PDF.</p>
+          </template>
+        </project-item>
+        <project-item
+          class="col-xs-12 col-md-6 col-lg-4"
+          title="Homebrew Creator"
+          url="https://satrix321.github.io/HomebrewCreator/index.html">
+          <template v-slot:image>
+            <g-image class="project__image" src="~/assets/hero-panel-nature.jpg"/>
+          </template>
+          <template v-slot:description>
+            <p>A simple web-based tool for creating homebrews using markdown.</p>
+            <p>This project features a live editor environment, that allows you to instantly preview your changes, and ultimately generate a beautiful PDF.</p>
+          </template>
+        </project-item>
+        <project-item
+          class="col-xs-12 col-md-6 col-lg-4"
+          title="Homebrew Creator"
+          url="https://satrix321.github.io/HomebrewCreator/index.html">
+          <template v-slot:image>
+            <g-image class="project__image" src="~/assets/hero-panel-nature.jpg"/>
+          </template>
+          <template v-slot:description>
+            <p>A simple web-based tool for creating homebrews using markdown.</p>
+            <p>This project features a live editor environment, that allows you to instantly preview your changes, and ultimately generate a beautiful PDF.</p>
+          </template>
+        </project-item>
+      </div>
     </div>
 
+    <the-contact-section/>
     <the-footer/>
   </Layout>
 </template>
 
 <script>
 import TheHeroPanel from '@/components/TheHeroPanel';
+import SectionTitle from '@/components/SectionTitle';
 import ProjectItem from '@/components/ProjectItem';
 import TheContactSection from '@/components/TheContactSection';
 import TheFooter from '@/components/TheFooter';
@@ -44,6 +68,7 @@ import TheFooter from '@/components/TheFooter';
 export default {
   components: {
     TheHeroPanel,
+    SectionTitle,
     ProjectItem,
     TheContactSection,
     TheFooter,
@@ -55,10 +80,17 @@ export default {
 </script>
 
 <style lang="scss">
-.home-links {
-  a {
-    margin-right: 1rem;
-    color: $red;
+.content {
+  @include grid;
+}
+
+a {
+  color: $color2;
+  text-decoration: none;
+
+  &:active, &:visited, &:focus {
+    color: $color2;
+    text-decoration: none;
   }
 }
 </style>

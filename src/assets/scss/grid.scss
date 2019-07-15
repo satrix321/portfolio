@@ -1,0 +1,64 @@
+@mixin grid {
+  $columns: 12;
+  $gutter: 1rem;
+
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: $gutter;
+  margin: auto;
+
+  .row {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: $gutter;
+  }
+
+  @for $i from 1 through $columns {
+    .col-xs-#{$i} {
+      grid-column-end: span $i;
+    }
+  }
+
+  @for $i from 1 through $columns {
+    .col-sm-#{$i} {
+      @media (min-width: 576px) {
+        grid-column-end: span $i;
+      }
+    }
+  }
+
+  @for $i from 1 through $columns {
+    .col-md-#{$i} {
+      @media (min-width: 768px) {
+        grid-column-end: span $i;
+      }
+    }
+  }
+
+  @for $i from 1 through $columns {
+    .col-lg-#{$i} {
+      @media (min-width: 992px) {
+        grid-column-end: span $i;
+      }
+    }
+  }
+
+  @for $i from 1 through $columns {
+    .col-xl-#{$i} {
+      @media (min-width: 1200px) {
+        grid-column-end: span $i;
+      }
+    }
+  }
+
+  @for $i from 1 through $columns {
+    .col-offset-#{$i} {
+      grid-column-start: $i+1;
+    }
+  }
+}

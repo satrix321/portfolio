@@ -19,21 +19,24 @@ export default {
 .hero-panel {
   background-image: url(~@/assets/hero-panel-nature.jpg);
   background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgb(139, 180, 255);
   color: white;
-  padding: 10em 0;
+  padding: 10rem 0;
 }
 
 .hero-panel__title {
+  text-transform: uppercase;
   text-align: center;
-  font-size: 3em;
-  text-shadow: 2px 2px black;
+  font-size: 2.75rem;
   margin: 1rem;
+  letter-spacing: 2px;
 }
 
 .hero-panel__description {
   text-align: center;
-  font-size: 1.6em;
-  text-shadow: 2px 2px black;
+  font-size: 1.5rem;
   margin: 1rem;
+  letter-spacing: 1.5px;
 }
 </style>
