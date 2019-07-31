@@ -2,6 +2,7 @@
   <section class="contact">
     <a href="https://github.com/satrix321"><font-awesome-icon class="icon" :icon="['fab', 'github']" size="2x"/></a>
     <a href="https://www.linkedin.com/in/krzysztof-szot-691653130/"><font-awesome-icon class="icon" :icon="['fab', 'linkedin']" size="2x"/></a>
+    <a href="mailto:krzysztof.szot.92@gmail.com"><font-awesome-icon class="icon" icon="envelope" size="2x"/></a>
   </section>
 </template>
 

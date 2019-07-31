@@ -51,6 +51,8 @@
           </template>
         </project-item>
       </div>
+
+      <section-title class="col-xs-12">CONTACT</section-title>
     </div>
 
     <the-contact-section/>

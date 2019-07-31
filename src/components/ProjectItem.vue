@@ -28,6 +28,8 @@ export default {
   flex-direction: column;
   padding: 1rem;
   background: $color4;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
 
   .project__image-container {
     grid-area: image;
@@ -48,6 +50,7 @@ export default {
   .project__image {
     width: calc(100% + 2rem);
     margin: -1rem -1rem 0 -1rem;
+    border-radius: 10px 10px 0 0;
   }
 }
 </style>
