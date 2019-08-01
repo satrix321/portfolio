@@ -4,12 +4,13 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 body {
   font-family: "Helvetica";
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  background: $color5;
 }
 
 .layout {

@@ -16,6 +16,6 @@ export default {
   align-items: center;
   justify-content: center;
   background: $color1;
-  color: white;
+  color: $color5;
 }
 </style>

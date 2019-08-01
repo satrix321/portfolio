@@ -15,12 +15,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .hero-panel {
   background-image: url(~@/assets/hero-panel-nature.jpg);
   background-size: cover;
-  background-blend-mode: multiply;
-  background-color: rgb(139, 180, 255);
   color: white;
   padding: 10rem 0;
 }

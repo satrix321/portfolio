@@ -57,8 +57,40 @@
   }
 
   @for $i from 1 through $columns {
-    .col-offset-#{$i} {
+    .col-xs-offset-#{$i} {
       grid-column-start: $i+1;
+    }
+  }
+
+  @for $i from 1 through $columns {
+    .col-sm-offset-#{$i} {
+      @media (min-width: 576px) {
+        grid-column-start: $i+1;
+      }
+    }
+  }
+
+  @for $i from 1 through $columns {
+    .col-md-offset-#{$i} {
+      @media (min-width: 768px) {
+        grid-column-start: $i+1;
+      }
+    }
+  }
+
+  @for $i from 1 through $columns {
+    .col-lg-offset-#{$i} {
+      @media (min-width: 992px) {
+        grid-column-start: $i+1;
+      }
+    }
+  }
+
+  @for $i from 1 through $columns {
+    .col-xl-offset-#{$i} {
+      @media (min-width: 1200px) {
+        grid-column-start: $i+1;
+      }
     }
   }
 }

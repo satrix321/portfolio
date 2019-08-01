@@ -19,14 +19,14 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $color5;
+  background: $color2;
 
   .icon {
     margin: .5rem;
-    color: black;
+    color: $color5;
 
     &:active, &:visited, &:focus {
-      color: black;
+      color: $color5;
     }
   }
 }
