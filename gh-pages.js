@@ -4,7 +4,7 @@ ghpages.publish('dist', {
     branch: 'master',
     repo: 'https://github.com/satrix321/satrix321.github.io.git'
 }, function (err) {
-    if (error) {
+    if (err) {
         console.log('Encountered an error!');
         console.log(err);
     } else {
