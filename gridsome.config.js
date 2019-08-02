@@ -27,5 +27,4 @@ module.exports = {
     })
   },
   siteUrl: 'https://satrix321.github.io',
-  pathPrefix: 'portfolio',
 }
