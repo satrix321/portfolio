@@ -1,5 +1,5 @@
 <template>
-  <section class="project">
+  <section class="project" :class="{ 'project--appear': animationStarted }">
     <div class="project__image-container">
       <slot name="image"></slot>
     </div>
@@ -22,6 +22,25 @@ export default {
     title: { type: String, required: true },
     url: { type: String, required: true }
   },
+  data: function () {
+    return {
+      animationStarted: false,
+    };
+  },
+  mounted: function () {
+    const options = {
+      rootMargin: '0px',
+      threshold: 1.0
+    }
+    const observer = new IntersectionObserver((entries, observer) => {
+      if (!this.animationStarted && entries[0].isIntersecting) {
+        this.animationStarted = true;
+      }
+    }, options);
+
+    const target = this.$el;
+    observer.observe(target);
+  }
 };
 </script>
 
@@ -32,6 +51,12 @@ export default {
   padding: 1rem;
   box-shadow: 0 0 3px $color2;
   background: $color5;
+  opacity: 0;
+  transition: opacity 1s;
+
+  &.project--appear {
+    opacity: 1;
+  }
 
   .project__image-container {
     grid-area: image;
@@ -53,6 +78,7 @@ export default {
   .project__image {
     width: calc(100% + 2rem);
     margin: -1rem -1rem 0 -1rem;
+    object-fit: contain;
   }
 
   .project__link {

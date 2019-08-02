@@ -21,20 +21,32 @@ export default {
   background-size: cover;
   color: white;
   padding: 10rem 0;
-}
+  animation-duration: 1s;
+  animation-name: appear;
 
-.hero-panel__title {
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 2.75rem;
-  margin: 1rem;
-  letter-spacing: 2px;
-}
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
 
-.hero-panel__description {
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 1rem;
-  letter-spacing: 1.5px;
+    to {
+      opacity: 1;
+    }
+  }
+
+  .hero-panel__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.75rem;
+    margin: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-panel__description {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+    letter-spacing: 1.5px;
+  }
 }
 </style>

@@ -25,5 +25,7 @@ module.exports = {
     types.forEach(type => {
       addStyleResource(config.module.rule('scss').oneOf(type))
     })
-	}
+  },
+  siteUrl: 'https://satrix321.github.io',
+  pathPrefix: 'portfolio',
 }
