@@ -20,8 +20,11 @@ export default {
   background-image: url(~@/assets/hero-panel-nature.jpg);
   background-size: cover;
   color: white;
-  padding: 10rem 0;
-  animation-duration: 1s;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation-duration: 2s;
   animation-name: appear;
 
   @keyframes appear {
