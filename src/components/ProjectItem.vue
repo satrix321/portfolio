@@ -93,5 +93,9 @@ export default {
     font-size: 1rem;
     cursor: pointer;
   }
+
+  .project__body {
+    flex-grow: 1;
+  }
 }
 </style>

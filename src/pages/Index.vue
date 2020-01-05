@@ -15,15 +15,29 @@
 
       <div class="row">
         <project-item
-          class="col-xs-12 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4"
+          class="col-xs-12 col-sm-6 col-lg-4 col-lg-offset-2"
           title="Homebrew Creator"
-          url="https://github.com/satrix321/Homebrew-Creator">
+          url="https://satrix321.github.io/Homebrew-Creator/"
+        >
           <template v-slot:image>
             <g-image class="project__image" src="~/assets/homebrew-creator-logo.png"/>
           </template>
           <template v-slot:description>
             <p>A simple web-based tool for creating homebrews using markdown.</p>
             <p>This project features a live editor environment, that allows you to instantly preview your changes, and ultimately generate a beautiful PDF.</p>
+          </template>
+        </project-item>
+        <project-item
+          class="col-xs-12 col-sm-6 col-lg-4"
+          title="Initiative Tracker"
+          url="https://satrix321.github.io/initiative-tracker/"
+        >
+          <template v-slot:image>
+            <g-image class="project__image" src="~/assets/initiative-tracker-logo.png"/>
+          </template>
+          <template v-slot:description>
+            <p>Web tool for tracking combat order in PnP roleplaying games</p>
+            <p>Responsive website with a simple UI, perfect as a companion app for every table.</p>
           </template>
         </project-item>
       </div>
