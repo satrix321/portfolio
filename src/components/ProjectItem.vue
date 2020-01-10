@@ -29,8 +29,9 @@ export default {
   },
   mounted: function () {
     const options = {
+      root: null,
       rootMargin: '0px',
-      threshold: 1.0
+      threshold: 0.5
     }
     const observer = new IntersectionObserver((entries, observer) => {
       if (!this.animationStarted && entries[0].isIntersecting) {

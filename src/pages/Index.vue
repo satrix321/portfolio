@@ -66,7 +66,7 @@ export default {
     TheFooter,
   },
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Krzysztof Szot'
   }
 }
 </script>

@@ -14,10 +14,13 @@ export default {
   },
   mounted: function () {
     const options = {
+      root: null,
       rootMargin: '0px',
-      threshold: 1.0
+      threshold: 0.5
     }
     const observer = new IntersectionObserver((entries, observer) => {
+      console.log(entries[0].isIntersecting);
+      console.log(entries[0]);
       if (!this.animationStarted && entries[0].isIntersecting) {
         this.animationStarted = true;
       }
