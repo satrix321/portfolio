@@ -37,8 +37,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: $color1;
-  color: $color5;
+  background: $primary-dark-2-color;
+  color: white;
   opacity: 0;
   transition: opacity 1s;
 

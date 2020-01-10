@@ -77,11 +77,11 @@ export default {
 }
 
 a {
-  color: $color2;
+  color: $primary-color;
   text-decoration: none;
 
   &:active, &:visited, &:focus {
-    color: $color2;
+    color: $primary-color;
     text-decoration: none;
   }
 }

@@ -50,8 +50,7 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  box-shadow: 0 0 3px $color2;
-  background: $color5;
+  box-shadow: 0 0 3px black;  
   opacity: 0;
   transition: opacity 1s;
 
@@ -69,7 +68,7 @@ export default {
   .project__title {
     text-align: center;
     margin: 1rem 0;
-    color: $color2;
+    color: $primary-color;
   }
 
   .project__description {
@@ -88,8 +87,8 @@ export default {
     align-items: center;
     width: 100%;
     height: 2.5rem;
-    background-color: $color4;
-    color: $color5;
+    background-color: $primary-color;
+    color: white;
     border: 0;
     font-size: 1rem;
     cursor: pointer;

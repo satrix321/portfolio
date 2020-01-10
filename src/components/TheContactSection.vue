@@ -38,7 +38,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $color2;
+  background: $primary-color;
   opacity: 0;
   transition: opacity 1s;
 
@@ -48,10 +48,10 @@ export default {
 
   .icon {
     margin: .5rem;
-    color: $color5;
+    color: white;
 
     &:active, &:visited, &:focus {
-      color: $color5;
+      color: white;
     }
   }
 }

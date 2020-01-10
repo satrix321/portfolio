@@ -1,6 +1,6 @@
 <template>
   <section class="hero-panel">
-    <g-image src="~/assets/hero-panel-nature.jpg"/>
+    <g-image src="~/assets/hero-panel.jpg"/>
     <div class="hero-panel__container">
       <h1 class="hero-panel__title">
         <slot name="title"></slot>
@@ -26,6 +26,7 @@ export default {
     max-width: 100%;
     height: 100vh;
     object-fit: cover;
+    filter: brightness(75%);
     animation-duration: 1s;
     animation-name: appear;
     position: absolute;
