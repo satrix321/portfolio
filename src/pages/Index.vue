@@ -11,7 +11,8 @@
 
     <div class="content">
       
-      <section-title class="col-xs-12">PROJECTS</section-title>
+      <!-- <section-title class="col-xs-12">PROJECTS</section-title> -->
+      <div style="height: 50px"/>
 
       <div class="row">
         <project-item
@@ -42,7 +43,8 @@
         </project-item>
       </div>
 
-      <section-title class="col-xs-12">CONTACT</section-title>
+      <!-- <section-title class="col-xs-12">CONTACT</section-title> -->
+      <div style="height: 50px"/>
     </div>
 
     <the-contact-section/>
