@@ -1,6 +1,6 @@
 <template>
   <footer class="footer" :class="{ 'footer--appear': animationStarted }">
-    <p>&copy; 2019 Krzysztof Szot</p>
+    <p>&copy; 2020 Krzysztof Szot</p>
   </footer>
 </template>
 

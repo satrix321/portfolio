@@ -56,7 +56,6 @@ export default {
   right: 0;
 
   .hero-panel__title {
-    text-transform: uppercase;
     text-align: center;
     font-size: 2.75rem;
     margin: 1rem;

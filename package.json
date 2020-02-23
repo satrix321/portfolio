@@ -4,6 +4,7 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
+    "serve": "gridsome develop",
     "explore": "gridsome explore",
     "predeploy": "npm run build",
     "deploy": "node gh-pages.js"
@@ -13,7 +14,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.9.0",
     "@fortawesome/free-regular-svg-icons": "^5.10.0",
     "@fortawesome/free-solid-svg-icons": "^5.10.0",
-    "@fortawesome/vue-fontawesome": "^0.1.6",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
     "gridsome": "^0.6.0",
     "gridsome-plugin-sass-resources-loader": "0.0.2"
   },

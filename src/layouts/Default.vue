@@ -6,10 +6,11 @@
 
 <style lang="scss">
 body {
-  font-family: "Helvetica";
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  background-color: $primary-light-3-color;
 }
 
 .layout {
