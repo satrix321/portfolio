@@ -1,5 +1,5 @@
 <template>
-  <section class="contact" :class="{ 'contact--appear': animationStarted }">
+  <section class="contact">
     <a href="https://github.com/satrix321">
       <font-awesome-icon class="icon" :icon="['fab', 'github']" size="2x"/>
     </a>
@@ -15,25 +15,6 @@
 <script>
 export default {
   name: 'TheContactSection',
-  data: function () {
-    return {
-      animationStarted: false,
-    };
-  },
-  mounted: function () {
-    const options = {
-      rootMargin: '0px',
-      threshold: 1.0
-    }
-    const observer = new IntersectionObserver((entries, observer) => {
-      if (!this.animationStarted && entries[0].isIntersecting) {
-        this.animationStarted = true;
-      }
-    }, options);
-
-    const target = this.$el;
-    observer.observe(target);
-  }
 };
 </script>
 
@@ -45,12 +26,6 @@ export default {
   justify-content: center;
   align-items: center;
   background: $primary-color;
-  opacity: 0;
-  transition: opacity 1s;
-
-  &.contact--appear {
-    opacity: 1;
-  }
 
   .icon {
     margin: .5rem;
