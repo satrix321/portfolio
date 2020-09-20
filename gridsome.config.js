@@ -17,7 +17,7 @@ function addStyleResource (rule) {
 }
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Portfolio',
   plugins: [],
   chainWebpack (config) {
     // Load variables for all vue-files
